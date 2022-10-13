@@ -1,14 +1,9 @@
 require('dotenv').config();
 
-const express = require('express')
-const app = express()
+const Server = require('./models/server')    // Ya esta la instancia
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
+const server = new Server();
 
-app.listen(process.env.PORT);
-
-
+server.listen();
 
 //C:\Users\WINDOWS10\Documents\Jonnathan Green\Cursos\N ode.js\Seccion8_RestServer
