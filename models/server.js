@@ -18,14 +18,34 @@ class Server {
     }
 
     routes(){
-        this.app.get('/', (req, res) => {
-            res.send('Hello World')
+        this.app.get('/app', (req, res) => {
+            res.json({
+                msg: 'get API'
+            })
+          })
+
+          this.app.put('/app', (req, res) => {
+            res.json({
+                msg: 'put API'
+            })
+          })
+
+          this.app.post('/app', (req, res) => {
+            res.json({
+                msg: 'post API'
+            })
+          })
+
+          this.app.delete('/app' , (req, res) => {
+            res.json({
+                msg: 'delete API'
+            })
           })
     }
 
     listen(){
         this.app.listen(this.port, () => {
-            console.log('Servidor corriend en puerto', this.port);
+            console.log('El servidor esta corriendo en el pueerto:', this.port);
         });
     }
 
