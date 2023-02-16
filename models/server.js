@@ -1,5 +1,5 @@
 const express = require('express')
-
+const cors = requiere ('cors')
 class Server {
 
     constructor(){
@@ -8,6 +8,9 @@ class Server {
 
         //middelwares Funciones que nos añaden otra funcinalidad a nuestro WeServer
         this.middlewares();
+
+        //CORS
+        this.app.use(cors() )
 
         //Rutas de la apliacion
         this.routes();
@@ -45,7 +48,7 @@ class Server {
 
     listen(){
         this.app.listen(this.port, () => {
-            console.log('El servidor esta corriendo en el pueerto:', this.port);
+            console.log('El servidor esta corriendo en el puerto:', this.port);
         });
     }
 

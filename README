@@ -7,4 +7,13 @@
 106. Peticiones HTTP GET PUT POST DELETE
 
 - Estos son 4 Enpoints, si se hace mantenimiento de un app web
--
+
+109. C odigos de respuesta HTTP en Express 
+
+- Los estatus 400 tienen que er de parte del frontend 
+- Los status 500 tienes que ver de parte el Backend
+
+
+110. Cors - Middleware 
+
+- Cors - Esto permite que tenga un acceso controlado para demas paginas web 
