@@ -22,3 +22,7 @@
 
 - Primero separamos las rutas en un archivo Routes, para asi tener una manera mas ordenada en el codigo 
 - utilizamos la funcion de express {Router} para desestructurar 
+
+111. Obtener datos de un POST
+
+- en este caso, nos dirijimos a Postman llamamos el post y seguido tomamos la opcion Body > Raw > Text > JSON

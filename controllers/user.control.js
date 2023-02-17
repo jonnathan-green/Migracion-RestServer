@@ -13,8 +13,11 @@ const {response} = require('express');
   }
 
   const userPost = (req, res =  response) => {
+
+    const body = req.body;
     res.json({
-        msg: 'post API'
+        msg: 'post API',
+        body
     })
   }
 

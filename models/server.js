@@ -11,7 +11,10 @@ class Server {
         this.middlewares();
 
         //CORS
-        this.app.use(cors() )
+        this.app.use(cors() );
+
+        //Lectura y Parcero del body 
+        this.app.use(express.json());
 
         //Rutas de la apliacion
         this.routes();
