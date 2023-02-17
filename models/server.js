@@ -1,10 +1,11 @@
 const express = require('express')
-const cors = requiere ('cors')
+const cors = require ('cors')
 class Server {
 
     constructor(){
         this.app = express();
-        this.port =process.env.PORT
+        this.port =process.env.PORT;
+        this.userPAth = '/app/users';
 
         //middelwares Funciones que nos añaden otra funcinalidad a nuestro WeServer
         this.middlewares();
@@ -21,29 +22,8 @@ class Server {
     }
 
     routes(){
-        this.app.get('/app', (req, res) => {
-            res.json({
-                msg: 'get API'
-            })
-          })
-
-          this.app.put('/app', (req, res) => {
-            res.json({
-                msg: 'put API'
-            })
-          })
-
-          this.app.post('/app', (req, res) => {
-            res.json({
-                msg: 'post API'
-            })
-          })
-
-          this.app.delete('/app' , (req, res) => {
-            res.json({
-                msg: 'delete API'
-            })
-          })
+        
+        this.app.use(this.userPAth, require('../Routes/user'))
     }
 
     listen(){
