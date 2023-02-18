@@ -26,3 +26,9 @@
 111. Obtener datos de un POST
 
 - en este caso, nos dirijimos a Postman llamamos el post y seguido tomamos la opcion Body > Raw > Text > JSON
+- Esto con el fin de dejas un objeto, y que se pueda rescibir con el metodo POST 
+
+112. Parametro de segmento y query 
+
+- En express ya viene copnfigurado ID, viene parceado y lo otroga en una propiedad del objeto Reques llamado params
+- Una manera de trabajar con los request, es con la desestructuracion

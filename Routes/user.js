@@ -7,7 +7,7 @@ const {userGet,
 
 const router = Router();
 
-  router.put('/', userPUT)
+  router.put('/:id', userPUT)
   router.get('/', userGet )
   router.post('/', userPost)
   router.patch('/', userPatch )
