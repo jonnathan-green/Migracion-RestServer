@@ -1,5 +1,6 @@
 const express = require('express')
-const cors = require ('cors')
+const cors = require ('cors');
+const {dbConnection} = require('../DataBase/config');
 class Server {
 
     constructor(){
@@ -7,17 +8,24 @@ class Server {
         this.port =process.env.PORT;
         this.userPAth = '/app/users';
 
+        //Conectar a base de datos
+        this.conectarDB();
+
         //middelwares Funciones que nos añaden otra funcinalidad a nuestro WeServer
         this.middlewares();
 
         //CORS
         this.app.use(cors() );
 
-        //Lectura y Parcero del body 
+        //Lectura y Parceo del body 
         this.app.use(express.json());
 
         //Rutas de la apliacion
         this.routes();
+    }
+
+    async conectarDB(){
+        await dbConnection();
     }
 
     middlewares(){

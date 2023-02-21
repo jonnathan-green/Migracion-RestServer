@@ -49,3 +49,7 @@ Seccion 9
 121. Alcance del proyecto 
 
 - Base de datos con 3 tablas, Crear ID aquto matico en todas las tablas, contraseña encriptada, integraciones con la api de google
+
+124. Mongoose 
+
+- Es un ODM es un modelador de objetos de informacion que vamos a grabar en nuestra base de datos, lo que nos puede brindar es Inserciones lecturas querys, hacer Query inyection.
