@@ -32,3 +32,20 @@
 
 - En express ya viene copnfigurado ID, viene parceado y lo otroga en una propiedad del objeto Reques llamado params
 - Una manera de trabajar con los request, es con la desestructuracion
+
+Seccion 9 
+
+120. - Definir los alcances de nuestro RESTserver
+- CRUD
+- Encriptacion de contraseñas 
+- Validaciones Personalizadas
+- Creacion de roles 
+- Conexiones a MLAB
+- Desplique de base de datos en la nube
+- Conexion de robot 3T con base de datos en la nube
+- Configuraion de variables de entorno
+- Borrado de archivos, Eliminado fisico de la base de datos, Eliminacion por estado en un  campo de la coleccion 
+
+121. Alcance del proyecto 
+
+- Base de datos con 3 tablas, Crear ID aquto matico en todas las tablas, contraseña encriptada, integraciones con la api de google
