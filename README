@@ -57,3 +57,7 @@ Seccion 9
 125. Modelo de usuario 
 
 - Crear mi modelo de usuario
+
+126. POST: Creando un usuario en la coleccion 
+
+- Se le da el Nombre Usuario para poder hacer la instancia y no confundirse con la constante 
