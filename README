@@ -53,3 +53,7 @@ Seccion 9
 124. Mongoose 
 
 - Es un ODM es un modelador de objetos de informacion que vamos a grabar en nuestra base de datos, lo que nos puede brindar es Inserciones lecturas querys, hacer Query inyection.
+
+125. Modelo de usuario 
+
+- Crear mi modelo de usuario
