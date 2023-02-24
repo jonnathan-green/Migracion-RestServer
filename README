@@ -67,3 +67,8 @@ Seccion 9
 - Para encriptar la contraseña necesitamos el paquete bcriptjs
 - Para hacer la encriptacion, se debe generar primero el SaltSync, esto es el numero de vueltas para hacer mas complicado 
 la encriptacion, con el salt ya se puede hacer el hash buscando nuestro usuario, el hash es para encriptar en una sola via. 
+
+128. Validar campos obligatorios - email 
+
+- Tenemos un paquete muy eficaz, que se llama express-vaidator 
+- Express-validator es una gran coleccion de middlewares, que para recordar que es middleware es una funcion que se ejecuta antes de llamar un controlador o seguir con la ejecucion de mis peticiones. 
