@@ -61,3 +61,9 @@ Seccion 9
 126. POST: Creando un usuario en la coleccion 
 
 - Se le da el Nombre Usuario para poder hacer la instancia y no confundirse con la constante 
+
+127. BcryptJS - Encriptando la contraseña 
+
+- Para encriptar la contraseña necesitamos el paquete bcriptjs
+- Para hacer la encriptacion, se debe generar primero el SaltSync, esto es el numero de vueltas para hacer mas complicado 
+la encriptacion, con el salt ya se puede hacer el hash buscando nuestro usuario, el hash es para encriptar en una sola via. 
