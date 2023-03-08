@@ -1,6 +1,5 @@
 const { request, response} = require('express');
 const bcrypt = require('bcryptjs')
-const {validationResult} = require('express-validator')
 const User = require('../models/usuario');
 
  const userGet = (req = request, res = response) => {
@@ -25,12 +24,6 @@ const User = require('../models/usuario');
   }
 
   const userPost = async (req, res =  response) => {
-
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json(errors)
-      
-    }
           
     const {nombre, correo, password, rol} = req.body;
     const user = new User({nombre, correo, password, rol})   // la instancia creada
