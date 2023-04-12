@@ -77,3 +77,7 @@ la encriptacion, con el salt ya se puede hacer el hash buscando nuestro usuario,
 
 - El Not().isEmpty Metodo el cual nos hace obligatorio nuestro campos
 - creacion de middlewares para la creacion de la validacion de campos 
+
+131. Hacer que no aparezca la contraseña encryptada 
+
+- Sibre escribir metodo ToJSON, con el fin  de que sea una funcion normal porque se utlizara el objeto this, una funcion de flecha mantiene lo que tiene el this fuera de ella, y se necesita porque va hacer referencia a la instancia creada
