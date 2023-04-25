@@ -29,13 +29,13 @@ const User = require('../models/usuario');
     const user = new User({nombre, correo, password, rol})   // la instancia creada
 
     //Verificar que el correo exista
-    const existeEmail = await User.findOne({correo});
-    if (existeEmail) {
-      return res.status(400).json({
-        msg: 'Señor usuario este correo ya existe, por favor validelo y ajustelo'
-      })
+    //const existeEmail = await User.findOne({correo});
+    //if (existeEmail) {
+    // return res.status(400).json({
+    //   msg: 'Señor usuario este correo ya existe, por favor validelo y ajustelo'
+   //  })
       
-    }
+    //}
 
     //Encriptar o hacer el hash de la contraseña 
     const salt = bcrypt.genSaltSync();
